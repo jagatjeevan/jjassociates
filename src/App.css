@@ -1,3 +1,7 @@
+:root {
+  --page-break: 35px;
+}
+
 .App {
   text-align: center;
 }

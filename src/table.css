@@ -1,9 +1,14 @@
 .slip-container {
   border: 1px solid #e7e7e7;
   border-radius: 3px;
-  margin-bottom: 35px;
+  margin-bottom: var(--page-break);
   padding: 5px;
 }
+
+.horizontal {
+  margin-bottom: var(--page-break);
+}
+
 table {
   border: 1px solid #343434;
   border-collapse: collapse;

@@ -98,7 +98,7 @@ function PrintAsIs(props) {
         </table>
         {getFooter()}
       </section>
-      <hr style={{ marginBottom: "35px" }} />
+      <hr className="horizontal" />
     </>
   );
 }
