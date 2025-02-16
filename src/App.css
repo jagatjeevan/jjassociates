@@ -2,6 +2,12 @@
   --page-break: 35px;
 }
 
+@media print {
+  :root {
+    --page-break: 35px;
+  }
+}
+
 .App {
   text-align: center;
 }
