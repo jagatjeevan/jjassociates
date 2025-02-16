@@ -1,10 +1,10 @@
 :root {
-  --page-break: 25px;
+  --page-break: 12px;
 }
 
 @media print {
   :root {
-    --page-break: 25px;
+    --page-break: 12px;
   }
 }
 
