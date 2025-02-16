@@ -59,3 +59,9 @@
     margin: 0;
   }
 }
+
+@media print {
+  .pagination {
+    display: none;
+  }
+}
