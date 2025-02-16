@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import UploadData from "./UploadData";
+import ShowData from "./ShowData";
+import PrintAsIs from "./PrintAsIs";
 
 function App() {
+  const [rows, setRows] = useState([]);
+  const [showRest, setShowRest] = useState(true);
+
+  const showPrintPreview = () => {
+    if (showRest) return null;
+    // return rows.slice(1).map((row) => <Template rowData={row} />);
+    return rows
+      .slice(1)
+      .map((row) => <PrintAsIs headings={rows[0]} data={row} />);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section id="main">
+      {showRest && <UploadData setRows={setRows} />}
+      {showRest && rows.length > 0 && <ShowData rows={rows} />}
+      <br />
+      {showRest && (
+        <button onClick={() => setShowRest(false)}>Print Preview</button>
+      )}
+      {showPrintPreview()}
+    </section>
   );
 }
 

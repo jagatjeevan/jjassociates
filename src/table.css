@@ -1,0 +1,26 @@
+.slip-container {
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  margin-bottom: 35px;
+  padding: 5px;
+}
+table {
+  border: 1px solid #343434;
+  border-collapse: collapse;
+  font-size: 15px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2px;
+}
+
+td,
+th {
+  padding: 5px 10px;
+  border: 1px solid #b1b1b1;
+}
+
+@media print {
+  th {
+    font-size: 0.8em;
+  }
+}
