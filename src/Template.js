@@ -5,7 +5,6 @@ function Template(props) {
     slNo,
     name,
     designation,
-    col1,
     attnd,
     basic_wages,
     g_wage,

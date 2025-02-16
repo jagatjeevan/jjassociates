@@ -98,7 +98,6 @@ function PrintAsIs(props) {
         </table>
         {getFooter()}
       </section>
-      <hr className="horizontal" />
     </>
   );
 }

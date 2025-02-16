@@ -29,3 +29,9 @@ th {
     font-size: 0.8em;
   }
 }
+
+.pagination {
+  @media print {
+    display: none;
+  }
+}
